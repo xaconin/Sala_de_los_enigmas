@@ -1,0 +1,145 @@
+
+/* Estilos generales */
+
+body {
+    background-color: #f4f1eb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Encabezado */
+
+.cabecera {
+    background-image: url("img/cabecera.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 70px 20px;
+}
+
+.cabecera h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.cabecera p {
+    margin-bottom: 0;
+    color: #d8dce2;
+}
+
+/* Seccion de bienvenida */
+
+.bienvenida {
+    background-color: #263b50;
+    color: white;
+    padding: 30px;
+    margin: 30px auto;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.bienvenida h2 {
+    margin-bottom: 20px;
+}
+
+.bienvenida p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Menu de navegacion */
+
+.menu-principal {
+    background-color: #172638;
+}
+
+.menu-principal .nav-link {
+    color: white;
+    margin-left: 10px;
+}
+
+.menu-principal .nav-link:hover {
+    color: #e6bd70;
+}
+
+/* Presentacion */
+
+.lead {
+    color: #555;
+}
+
+/* Tarjetas de los juegos */
+
+.card {
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #263b50;
+}
+
+/* Botones */
+
+.card .btn {
+    background-color: #263b50;
+    border-color: #263b50;
+}
+
+.card .btn:hover {
+    background-color: #405d78;
+    border-color: #405d78;
+}
+
+/* Pie de página */
+
+.pie-pagina {
+    background-color: #192b3d;
+    color: #f5efe5;
+    padding: 20px 0;
+}
+
+.pie-pagina h5 {
+    color: #e6c88a;
+    font-weight: bold;
+}
+
+.pie-pagina p {
+    margin-bottom: 5px;
+}
+
+.pie-pagina a {
+    color: #f5efe5;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+.pie-pagina a:hover {
+    color: #e6c88a;
+    text-decoration: underline;
+}
+
+/* Secciones de la página Acerca de */
+
+.seccion-proyecto {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.seccion-proyecto h3 {
+    color: #263d52;
+    margin-bottom: 15px;
+}
+
+.seccion-proyecto p,
+.seccion-proyecto li {
+    line-height: 1.7;
+}

@@ -10,69 +10,116 @@
           rel="stylesheet">
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>La Sala de los Enigmas</h1>
-   <!-- Menu -->
-   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="#">Inicio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Pasatiempos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Retos matematicos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Misterios</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Acerca de
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
+   <header class="cabecera">
+    <h1>La Sala de los Enigmas</h1>
+   </header>
+       <!-- Menu -->
+   <nav class="navbar navbar-expand-lg navbar-dark menu-principal">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavegacion">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNavegacion">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="operaciones.html">Operaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="adivinanzas.html">Pasatiempos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="retos.html">Retos matemáticos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acerca.html">Acerca de</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    </div>
-   </nav>
+</nav>
     <!-- Fin menu -->
-    <!-- Pagina inicio -->
-    <fieldset introducciom> 
-        <legend>Bienvenida</legend>
-        <p>Bienvenidos al blog, a los que nos gusta el mundo de los pasatiempos, puzzles y enigmas estoy seguro que sera un rincon divertido donde poder entrenar la mente</p>
-    </fieldset>
-   
-    <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
+    <!-- Pagina inicio -->
+<section class="bienvenida">
+    <h2>Bienvenida</h2>
+    <p>Bienvenidos al blog, a los que nos gusta el mundo de los pasatiempos, puzzles y enigmas estoy seguro que sera un rincon divertido donde poder entrenar la mente</p>
+</section>
+
+  <!-- Juegos  -->
+<div class="container mt-4">
+
+    <div class="row">
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Operaciones matemáticas</h5>
+                    <p class="card-text">
+                        Demuestra tu habilidad resolviendo operaciones.
+                    </p>
+                    <a  href="operaciones.html"><img src="img/operaciones.jpg" class="img-fluid rounded mb-3" alt="Operaciones matemáticas"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Adivinanzas</h5>
+                    <p class="card-text">
+                        Pon a prueba tu ingenio con diferentes pasatiempos.
+                    </p>
+                    <a href="adivinanzas.html" ><img src="img/adivinanzas.jpg" class="img-fluid rounded mb-3" alt="Adivinanzas"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Retos matemáticos</h5>
+                    <p class="card-text">
+                        Resuelve desafíos y demuestra lo que sabes.
+                    </p>
+                    <a href="retos.html"><img src="img/retos.jpg" class="img-fluid rounded mb-3" alt="Retos matemáticos"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<<footer class="pie-pagina mt-5">
+    <div class="container py-4">
+        <div class="row align-items-center">
+
+            <div class="col-md-4 text-center text-md-start">
+                <h5>La Sala de los Enigmas</h5>
+                <p>Pasatiempos, lógica y diversión</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <a href="index.html">Inicio</a> |
+                <a href="operaciones.html">Operaciones</a> |
+                <a href="pasatiempos.html">Adivinanzas</a> |
+                <a href="retos.html">Retos matemáticos</a> |
+                <a href="acerca.html">Acerca de</a>
+            </div>
+
+            <div class="col-md-4 text-center text-md-end">
+                <p>Pedro Chacón Rosa</p>
+                <p>UNIR - Desarrollo de Aplicaciones en Red</p>
+                <p>© 2026 La Sala de los Enigmas</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
 </body>
 </html>
