@@ -89,8 +89,22 @@ function siguienteAdivinanza() {
             "Tu puntuación final es: " + aciertos + " aciertos.";
         document.getElementById("botonComprobar").style.display = "none";
         document.getElementById("botonSiguiente").textContent = "Volver a empezar";
+        document.getElementById("botonSiguiente").onclick=reiniciar;
         return;
     }
+
+    mostrarAdivinanza();
+}
+
+function reiniciar(){
+    adivinanzaActual = 0;
+     aciertos = 0;
+    respondida = false;
+    document.getElementById("botonSiguiente").textContent = "Siguiente adivinanza";
+    document.getElementById("botonSiguiente").onclick = siguienteAdivinanza;
+    document.getElementById("respuesta").style.display = "block";
+    document.getElementById("botonComprobar").style.display = "inline-block";
+    document.getElementById("aciertos").textContent = aciertos;
 
     mostrarAdivinanza();
 }

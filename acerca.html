@@ -6,17 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca del proyecto - La Sala de los Enigmas</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
+ <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Estilo CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Cabecera -->
-    <header class="cabecera text-center p-4">
-        <h1>La Sala de los Enigmas</h1>
+    <header class="cabecera">
+        <img src="img/cabecera.jpg" alt="La Sala de los Enigmas" class="imagen-cabecera">
     </header>
        <!-- Menu -->
    <nav class="navbar navbar-expand-lg navbar-dark menu-principal">
@@ -33,7 +36,7 @@
                     <a class="nav-link" href="operaciones.html">Operaciones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="adivinanzas.html">Pasatiempos</a>
+                    <a class="nav-link" href="adivinanzas.html">Adivinanzas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="retos.html">Retos matemáticos</a>
@@ -55,10 +58,7 @@
             <h3>¿Qué es La Sala de los Enigmas?</h3>
 
             <p>
-                La Sala de los Enigmas es un blog dedicado a los pasatiempos,
-                los acertijos y los desafíos matemáticos. Su objetivo es ofrecer
-                un espacio entretenido donde los usuarios puedan poner a prueba
-                su ingenio y entrenar la mente mediante diferentes actividades.
+                La Sala de los Enigmas es un blog que ha sido pensado para entrener, ademas de entrenar la mente de paso.             
             </p>
         </section>
 
@@ -67,7 +67,7 @@
 
             <p>
                 El proyecto pretende combinar entretenimiento y aprendizaje
-                mediante actividades sencillas e interactivas. Se busca que
+                mediante actividades sencillas. Se busca que
                 el usuario pueda participar, comprobar sus respuestas y
                 conocer su puntuación.
             </p>
@@ -90,12 +90,12 @@
             <p>
                 La web se ha construido mediante diferentes páginas HTML
                 conectadas entre sí a través de un menú de navegación.
-                Se ha utilizado una hoja de estilos CSS común para mantener
+                Se ha utilizado una hoja de estilos CSS común y diferencia por secciones para mantener
                 una apariencia uniforme en todo el sitio.
             </p>
 
             <p>
-                Las funcionalidades interactivas se han desarrollado con
+                Las comprobaciones de resultados, marcadores y funcionalidades se han desarrollado con
                 JavaScript, mediante pequeños programas que permiten generar
                 operaciones matemáticas, comprobar adivinanzas y resolver
                 retos numéricos.
@@ -105,6 +105,7 @@
                 Para facilitar la organización del proyecto, los archivos
                 JavaScript se encuentran en una carpeta independiente,
                 mientras que las imágenes están agrupadas en otra carpeta.
+                Quedando las diferentes paginas en la carpeta raiz del proyecto.
             </p>
         </section>
 
@@ -118,33 +119,27 @@
         </section>
 
     </main>
-
     <!-- Pie de página -->
     <footer class="pie-pagina mt-5">
         <div class="container py-4">
             <div class="row align-items-center">
-
                 <div class="col-md-4 text-center text-md-start">
                     <h5>La Sala de los Enigmas</h5>
                     <p>Pasatiempos, lógica y diversión</p>
                 </div>
-
                 <div class="col-md-4 text-center">
                     <a href="index.html">Inicio</a> |
                     <a href="operaciones.html">Operaciones</a> |
-                    <a href="pasatiempos.html">Adivinanzas</a> |
+                    <a href="adivinanzas.html">Adivinanzas</a> |
                     <a href="retos.html">Retos matemáticos</a>
                 </div>
-
                 <div class="col-md-4 text-center text-md-end">
                     <p>Autor: Pedro Chacón</p>
                     <p>UNIR - Desarrollo de Aplicaciones en Red</p>
                     <p>© 2026 La Sala de los Enigmas</p>
                 </div>
-
             </div>
         </div>
     </footer>
-
 </body>
 </html>
